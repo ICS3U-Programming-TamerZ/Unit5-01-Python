@@ -7,24 +7,24 @@
 
 
 def TempConv():
-    #Gets temperature celsius from User
+    # Gets temperature celsius from User
     temp_cel_str = input("what is your temperature in degrees celsius ℃ : ")
-    #Tries casting the temperature to a float
+    # Tries casting the temperature to a float
     try:
 
         temp_cel_float = float(temp_cel_str)
-    #Exception thrown if user did not enter a number
+    # Exception thrown if user did not enter a number
     except ValueError:
         print("Please enter a number")
     else:
-        #Calculates and displays temp in fahrenheit
+        # Calculates and displays temp in fahrenheit
         temp_fahrenheit_float = (temp_cel_float * 9 / 5) + 32
         print(f"{temp_cel_float}℃ = {temp_fahrenheit_float}℉")
     main()
 
 
 def main():
-#Calls function TempConv
+    # Calls function TempConv
     TempConv()
 
 
